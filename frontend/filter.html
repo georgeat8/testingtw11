@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footwear Smart Assistant</title>
+    <link rel="stylesheet" href="styles/general-styles.css">
+    <link rel="stylesheet" href="styles/filter-styles.css">
+    <script src="scripts/sidemenu-script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="resources/logo.png" alt="Footwear Smart Assistant">
+            </a>
+        </div>
+        <div class="title">
+            <h1><a href="index.html" class="title-link">Footwear Smart Assistant</a></h1>
+        </div>
+        <button class="open-menu-btn">&#9776;</button>
+    </header>
+
+    <nav class="side-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="filter.html">Products & Outfits</a></li>
+            <li><a href="#">Suggestions & Sharing</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+        <button class="close-menu-btn">&times;</button>
+    </nav>
+
+    <main>
+        <div class="filter-header">
+            <h2>Here are the most popular choices this season</h2>
+        </div>
+
+            <div id="recommendation-filter">
+                <div class="filter-category" onclick="toggleDropdown('season')">
+                  <h3>Season</h3>
+                  <div id="season" class="dropdown">
+                    <div class="option" onclick="selectOption(this)">Spring</div>
+                    <div class="option" onclick="selectOption(this)">Summer</div>
+                    <div class="option" onclick="selectOption(this)">Autumn</div>
+                    <div class="option" onclick="selectOption(this)">Winter</div>
+                  </div>
+                </div>
+                <div class="filter-category" onclick="toggleDropdown('weather')">
+                  <h3>Weather</h3>
+                  <div id="weather" class="dropdown">
+                    <div class="option" onclick="selectOption(this)">Sunny</div>
+                    <div class="option" onclick="selectOption(this)">Rainy</div>
+                    <div class="option" onclick="selectOption(this)">Cold</div>
+                    <div class="option" onclick="selectOption(this)">Windy</div>
+                    <div class="option" onclick="selectOption(this)">Snowy</div>
+                  </div>
+                </div>
+                <div class="filter-category" onclick="toggleDropdown('gender')">
+                    <h3>Gender</h3>
+                    <div id="gender" class="dropdown">
+                      <div class="option" onclick="selectOption(this)">Male</div>
+                      <div class="option" onclick="selectOption(this)">Female</div>
+                      <div class="option" onclick="selectOption(this)">Unisex</div>
+                    </div>
+                </div>
+                <div class="filter-category" onclick="toggleDropdown('age')">
+                    <h3>Age</h3>
+                    <div id="age" class="dropdown">
+                      <div class="option" onclick="selectOption(this)">Child</div>
+                      <div class="option" onclick="selectOption(this)">Teen</div>
+                      <div class="option" onclick="selectOption(this)">Adult</div>
+                    </div>
+                </div>
+                <div class="filter-category" onclick="toggleDropdown('color')">
+                    <h3>Color</h3>
+                    <div id="color" class="dropdown">
+                      <div class="option" onclick="selectOption(this)">Black</div>
+                      <div class="option" onclick="selectOption(this)">White</div>
+                      <div class="option" onclick="selectOption(this)">Brown</div>
+                      <div class="option" onclick="selectOption(this)">Grey</div>
+                      <div class="option" onclick="selectOption(this)">Navy</div>
+                      <div class="option" onclick="selectOption(this)">Pink</div>
+                      <div class="option" onclick="selectOption(this)">Purple</div>
+                      <div class="option" onclick="selectOption(this)">Red</div>
+                      <div class="option" onclick="selectOption(this)">Green</div>
+                      <div class="option" onclick="selectOption(this)">Light blue</div>
+                    </div>
+                </div>
+                <div class="filter-category" onclick="toggleDropdown('pattern')">
+                    <h3>Pattern</h3>
+                    <div id="pattern" class="dropdown">
+                      <div class="option" onclick="selectOption(this)">Plain</div>
+                      <div class="option" onclick="selectOption(this)">Dots</div>
+                      <div class="option" onclick="selectOption(this)">Stripes</div>
+                    </div>
+                </div>
+              </div>
+
+        <div class="gallery-container">
+            <h2 class="title">Shoe gallery</h2>
+            <div class="photo-gallery">
+
+                <div class="column">
+                    <div class="photo">
+                        <a href="shoe-page.html">
+                            <img src="resources/generic-shoe.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="photo">
+                        <a href="shoe-page.html">
+                            <img src="resources/generic-shoe.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="photo">
+                        <a href="shoe-page.html">
+                            <img src="resources/generic-shoe.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="photo">
+                        <a href="shoe-page.html">
+                            <img src="resources/generic-shoe.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="photo">
+                        <a href="shoe-page.html">
+                            <img src="resources/generic-shoe.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="photo">
+                        <a href="shoe-page.html">
+                            <img src="resources/generic-shoe.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Contact: contact@shoerecommendations.com</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p>&copy; 2024 Shoe Recommendation Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/filter-dropdown-script.js"></script>
+</body>
+
+</html>

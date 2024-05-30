@@ -1,0 +1,60 @@
+.login-btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #45a049;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.homepage-photo-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.homepage-photo img {
+  max-width: 100%;
+  border: #333 solid 1px;
+}
+
+@media screen and (max-width: 1000px) {
+  .homepage-photo img {
+    max-width: 80%;
+  }
+}
+.newsletter-section {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.subscribe-btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: #333;
+}/*# sourceMappingURL=index-styles.css.map */

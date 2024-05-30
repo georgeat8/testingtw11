@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/general-styles.css">
+    <link rel="stylesheet" href="styles/login-styles.css">
+    <script src="scripts/sidemenu-script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="resources/logo.png" alt="Footwear Smart Assistant">
+            </a>
+        </div>
+        <div class="title">
+            <h1><a href="index.html" class="title-link">Footwear Smart Assistant</a></h1>
+        </div>
+        <button class="open-menu-btn">&#9776;</button>
+    </header>
+
+    <nav class="side-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="filter.html">Products & Outfits</a></li>
+            <li><a href="#">Suggestions & Sharing</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="close-menu-btn">&times;</button>
+    </nav>
+
+    <main class="login-container">
+        <div class="login-box">
+            <h2>CONNECT TO YOUR ACCOUNT</h2>
+            <form action="login.php" method="POST">
+                <div class="form-group">
+                    <input type="email" id="email" name="email" class="input-field" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" class="input-field" placeholder="Password"
+                        required>
+                </div>
+                <button type="submit" class="login-btn">LOGIN</button>
+            </form>
+
+            <h2>ARE YOU A NEW CUSTOMER?</h2>
+            <p>Join us now to discover the latest trends and recommendations!</p>
+            <a href="register.html" class="register-btn">REGISTER NOW</a>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>Contact: contact@shoerecommendations.com</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p>&copy; 2024 Shoe Recommendation Platform. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

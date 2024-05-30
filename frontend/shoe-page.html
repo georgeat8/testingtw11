@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footwear Smart Assistant</title>
+    <link rel="stylesheet" href="styles/general-styles.css">
+    <link rel="stylesheet" href="styles/shoe-page-styles.css">
+    <script src="scripts/sidemenu-script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="resources/logo.png" alt="Footwear Smart Assistant">
+            </a>
+        </div>
+        <div class="title">
+            <h1><a href="index.html" class="title-link">Footwear Smart Assistant</a></h1>
+        </div>
+        <button class="open-menu-btn">&#9776;</button>
+    </header>
+
+    <nav class="side-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="filter.html">Products & Outfits</a></li>
+            <li><a href="#">Suggestions & Sharing</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+        <button class="close-menu-btn">&times;</button>
+    </nav>
+
+    <main>
+        <div class="recommendation-header">
+            <h2>Here is our recommendation</h2>
+        </div>
+        <section class="recommendation-details-section">
+            <div class="shoe-photo">
+                <img src="resources/generic-shoe.jpg" alt="Shoe Photo">
+            </div>
+            <div class="shoe-description">
+                <h2>Shoe Description</h2>
+                <p>For dancing ceremonies we abvise you to wear shoes with stainless steel heels.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe perferendis et quam dignissimos voluptatibus? Consectetur, expedita officia! Optio, doloribus quos tempore rem aperiam dolor. Non voluptates quis eveniet recusandae culpa.</p>
+            </div>
+        </section>
+
+        <section class="user-review-section">
+            <h2>Leave a review</h2>
+            <form action="#" method="post">
+                <label for="review">Your review:</label><br>
+                <textarea id="review" name="review" rows="1" cols="50" required></textarea><br>
+                <label for="name">Your name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating">
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select><br>
+                <input type="submit" value="Submit review">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Contact: contact@shoerecommendations.com</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p>&copy; 2024 Shoe Recommendation Platform. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
