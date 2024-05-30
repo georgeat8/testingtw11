@@ -9,7 +9,7 @@ function checkUsername(name) {
     return new Promise(function (resolve, reject) {
         var mysql = require('mysql');
 
-        var con = mysql.createConnection({ host: 'mysql-noem', user: 'mysql', password: 'XLHeGu88in1S+oJMRJmJYpxVGf8fH5zNcTIeYoywCw8=', database: 'mysql' });
+        var con = mysql.createConnection({ server: 'mysql-noem', port: 3306, user: 'mysql', password: 'XLHeGu88in1S+oJMRJmJYpxVGf8fH5zNcTIeYoywCw8=', database: 'mysql' });
         con.connect(function (err) {
             if (err) return reject(err);
             console.log("Connected!");
@@ -30,7 +30,7 @@ function checkEmail(email) {
     return new Promise(function (resolve, reject) {
         var mysql = require('mysql');
 
-        var con = mysql.createConnection({ host: 'mysql-noem', user: 'mysql', password: 'XLHeGu88in1S+oJMRJmJYpxVGf8fH5zNcTIeYoywCw8=', database: 'mysql' });
+        var con = mysql.createConnection({ server: 'mysql-noem', port: 3306, user: 'mysql', password: 'XLHeGu88in1S+oJMRJmJYpxVGf8fH5zNcTIeYoywCw8=', database: 'mysql' });
         con.connect(function (err) {
             if (err) return reject(err);
             console.log("Connected!");
@@ -51,7 +51,7 @@ function addUser(name, email, password) {
     return new Promise(function (resolve, reject) {
         var mysql = require('mysql');
 
-        var con = mysql.createConnection({ host: 'mysql-noem', user: 'mysql', password: 'XLHeGu88in1S+oJMRJmJYpxVGf8fH5zNcTIeYoywCw8=', database: 'mysql' });
+        var con = mysql.createConnection({ server: 'mysql-noem', port: 3306, user: 'mysql', password: 'XLHeGu88in1S+oJMRJmJYpxVGf8fH5zNcTIeYoywCw8=', database: 'mysql' });
         con.connect(function (err) {
             if (err) return reject(err);
             console.log("Connected!");
@@ -73,7 +73,7 @@ module.exports.checkStatus = function (username) {
     return new Promise(function (resolve, reject) {
         var mysql = require('mysql');
 
-        var con = mysql.createConnection({ host: 'mysql-noem', user: 'mysql', password: 'XLHeGu88in1S+oJMRJmJYpxVGf8fH5zNcTIeYoywCw8=', database: 'mysql' });
+        var con = mysql.createConnection({ server: 'mysql-noem', port: 3306, user: 'mysql', password: 'XLHeGu88in1S+oJMRJmJYpxVGf8fH5zNcTIeYoywCw8=', database: 'mysql' });
 
         con.connect(function (err) {
             if (err) return reject(err);
@@ -95,7 +95,7 @@ module.exports.login = function (user_name, password) {
     return new Promise(function (resolve, reject) {
         var mysql = require('mysql');
 
-        var con = mysql.createConnection({ host: 'mysql-noem', user: 'mysql', password: 'XLHeGu88in1S+oJMRJmJYpxVGf8fH5zNcTIeYoywCw8=', database: 'mysql' });
+        var con = mysql.createConnection({ server: 'mysql-noem', port: 3306, user: 'mysql', password: 'XLHeGu88in1S+oJMRJmJYpxVGf8fH5zNcTIeYoywCw8=', database: 'mysql' });
 
         con.connect(function (err) {
             if (err) return reject(err);
@@ -123,7 +123,7 @@ module.exports.getId = function (username) {
     return new Promise(function (resolve, reject) {
         var mysql = require('mysql');
         console.log("get id:" + username);
-        var con = mysql.createConnection({ host: 'mysql-noem', user: 'mysql', password: 'XLHeGu88in1S+oJMRJmJYpxVGf8fH5zNcTIeYoywCw8=', database: 'mysql' });
+        var con = mysql.createConnection({ server: 'mysql-noem', port: 3306, user: 'mysql', password: 'XLHeGu88in1S+oJMRJmJYpxVGf8fH5zNcTIeYoywCw8=', database: 'mysql' });
 
         con.connect(function (err) {
             if (err) return reject(err);
@@ -145,7 +145,7 @@ module.exports.getUsername = function (userID) {
     return new Promise(function (resolve, reject) {
         var mysql = require('mysql');
         console.log("get USERNAME for:" + userID);
-        var con = mysql.createConnection({ host: 'mysql-noem', user: 'mysql', password: 'XLHeGu88in1S+oJMRJmJYpxVGf8fH5zNcTIeYoywCw8=', database: 'mysql' });
+        var con = mysql.createConnection({ server: 'mysql-noem', port: 3306, user: 'mysql', password: 'XLHeGu88in1S+oJMRJmJYpxVGf8fH5zNcTIeYoywCw8=', database: 'mysql' });
 
         con.connect(function (err) {
             if (err) return reject(err);
