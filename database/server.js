@@ -2,9 +2,9 @@ const mysql = require('mysql');
 
 const pool = mysql.createPool({
     connectionLimit: 10,
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
+    host: 'mysql-noem:3306',
+    user: 'mysql',
+    password: 'Gpw9JJCmxuDQXa61cqT45vzvFO92P6hnhbyENlhxYLM=',
     database: 'fosa_database'
 });
 
@@ -14,9 +14,9 @@ pool.on('error', (err) => {
         pool.end();
         pool = mysql.createPool({
             connectionLimit: 10,
-            host: 'localhost',
-            user: 'root',
-            password: 'root',
+            host: 'mysql-noem:3306',
+            user: 'mysql',
+            password: 'Gpw9JJCmxuDQXa61cqT45vzvFO92P6hnhbyENlhxYLM=',
             database: 'fosa_database'
         });
     } else {
